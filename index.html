@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vipin Yadav | Backend & Cloud Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="nav-logo">
+        <a href="/">
+          <img src="./assets/logo.png">
+        </a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Creating Hamburger menu for responsiveness (Mobile) -->
+    <nav id="hamburger-nav">
+      <div class="nav-logo">
+        <a href="/">
+          <img src="./assets/logo.png">
+        </a>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!--Actual links corresponding to the toggleMenu() method-->
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Vipin Yadav Profile Picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Vipin Yadav</h1>
+        <p class="section__text__p2">Backend & Cloud Developer</p>
+
+        <!--Download CV button -->
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+
+          <!--Navigate to Contact Info Section -->
+          <button class="cta-btn" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+
+        <!-- Social buttons  -->
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/vipin-yadav-37610919b/'"
+          />
+
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/coderxvipin'"
+          />
+
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Project Based Experience <br />Backend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BCA Bachelors Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p id="about_me_paragraph">
+            A Java Full Stack Developer building scalable web applications from backend APIs to polished frontends. 
+		        I specialise in Spring Boot + React.js and love turning complex problems into clean, deployable solutions. 
+		        <br> I've built full-stack systems secured with JWT, deployed on AWS, 
+		        and automated with CI/CD pipelines — writing code that doesn't just work, but ships reliably.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- Experience Section-->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+
+       <!-- Experience container-->
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+          <!-- First details container-->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  
+                </div>
+              </article>
+            </div>
+          </div>
+          
+          <!-- Second details container-->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  
+                </div>
+              </article>
+            </div>
+          </div>
+
+        <!-- Third details container-->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Development tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git & GitHub</h3>
+                  
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Postman</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Maven</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JUnit</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mockito</h3>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Fourth details container-->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Cloud & deployment</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS EC2</h3>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS S3</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS RDS</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>GitHub Actions</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CI/CD Pipeline</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker Deployment</h3>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <br>
+      <br>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+<!-- Project Section -->
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+
+  <div class="experience-details-container">
+    <div class="projects-wrapper">
+      <div class="projects-grid">
+
+        <!-- Project Card 1 -->
+        <div class="details-container-for-project-cards color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="project-title">Project One</h2>
+          <div class="project-description">
+            <p class="description-label">About this project</p>
+            <p class="description-text">
+              A staff management portal enabling to create, read,
+              update, delete and track employee records.
+            </p>
+              <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">MySQL</span>
+              </div>
+          </div>
+          
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/coderxvipin/spring-react-staff-management-portal.git'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='http://15.206.248.98/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="details-container-for-project-cards color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="project-title">Project Two</h2>
+          <div class="project-description">
+          <p class="description-label">About this project</p>
+          <p class="description-text">
+            First impressions matter. Here's mine: <br> A sleek developer portfolio website showcasing skills, projects & experience.
+            <!-- Eye-catching developer profile card built to make a memorable first impression on recruiters and potential collaborators. -->
+          </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              </div>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/coderxvipin/personal-portfolio.git'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://coderxvipin.in/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="details-container-for-project-cards color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="project-title">- Dummy Project - </h2>
+          <div class="project-description">
+          <p class="description-label">About this project</p>
+          <p class="description-text">
+            This is just a dummy project just to check the project grid functionality. Not an actual project!
+          </p>
+          <div class="project-tags">
+              <span class="tag"> - - - </span>
+              <span class="tag"> - - - </span>
+              <span class="tag"> - - - </span>
+              </div>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://coderxvipin.in/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://coderxvipin.in/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="details-container-for-project-cards color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="project-title">- Dummy Project - </h2>
+          <div class="project-description">
+          <p class="description-label">About this project</p>
+          <p class="description-text">
+            This is just a dummy project just to check the project grid functionality. Not an actual project!
+          </p>
+          <div class="project-tags">
+              <span class="tag"> - - - </span>
+              <span class="tag"> - - - </span>
+              <span class="tag"> - - - </span>
+              </div>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://coderxvipin.in/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://coderxvipin.in/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+</section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me
+        <img src="./assets/downarrow.gif" alt="downarrow" width="60px" height="60px">
+      </h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">coderxvipin@gmail.com</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/vipin-yadav-37610919b/">LinkedIn</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/whatsapp-logo.png"
+            alt="WhatsApp icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://wa.me/917009257546">WhatsApp</a></p>
+        </div>
+
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links-bottom">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2026 coderxvipin. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

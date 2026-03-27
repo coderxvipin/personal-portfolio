@@ -1,0 +1,39 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary / log files
+*.log
+*.tmp
+*.temp
+logs/
+
+# Build or generated folders (in case you add tools later)
+dist/
+build/
+out/
+node_modules/
+
+# Large media or unnecessary files (uncomment if needed)
+# *.mp4
+# *.mov
+# *.avi
+# *.zip
+
+# Environment or secret files (good practice)
+.env
+*.env
