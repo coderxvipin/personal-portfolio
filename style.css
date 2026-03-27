@@ -417,7 +417,7 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
-  padding: 20px;
+  padding: 25px;
   
 }
 
@@ -533,7 +533,7 @@ article .icon {
   display: flex;
   flex: unset;
   width: 100%;
-  border: 3px inset rgba(113, 88, 88);
+  border: 3px solid rgb(0, 0, 0);
   border-radius: 30px;
   padding-top: 15px;
   padding-bottom: 15px;
