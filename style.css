@@ -467,9 +467,16 @@ section {
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  padding-right: 75px;
 }
 
+.article-container-for-4th-details-conatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  padding-right: 75px;
+  white-space: nowrap;
+}
 .article-container article div h3 {
   white-space: nowrap;
 }
