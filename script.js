@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Create button
   const btn = document.createElement("button");
-  btn.textContent = "View More";
+  btn.textContent = "Explore More";
   btn.classList.add("btn", "btn-color-1", "view-more-btn");
 
   btn.addEventListener("click", () => {
