@@ -98,6 +98,8 @@ jobs:
               --name personal-portfolio \
               --restart unless-stopped \
               -p 80:80 \
+              -p 443:443 \
+              -v /etc/letsencrypt:/etc/letsencrypt:ro \
               ${{ secrets.DOCKER_USERNAME }}/personal-portfolio:latest
 
             # Clean up old unused images

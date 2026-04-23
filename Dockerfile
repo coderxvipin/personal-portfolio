@@ -16,6 +16,7 @@ COPY assets/ /usr/share/nginx/html/assets/
 
 # Expose port 80
 EXPOSE 80
+EXPOSE 443
 
 # Start Nginx in foreground
 CMD ["nginx", "-g", "daemon off;"]
