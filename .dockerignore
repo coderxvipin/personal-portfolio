@@ -1,0 +1,12 @@
+.git
+.gitignore
+.gitattributes
+.github/
+Dockerfile
+.dockerignore
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+*.log
+README.md
